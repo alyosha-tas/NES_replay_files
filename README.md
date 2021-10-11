@@ -7,3 +7,5 @@ Additionally, the following runs require RAM cleared to the pattern used by defa
 
 Metroid low percent requires the following command:
 py -3 python\tastm32.py --console nes --players 1,5 --blank 0 --dpcm metroid_frame.r08
+
+Solar Jetman starts from a reset  so should use --blank 0. However the run still syncs from power on, it just doesn't skip the intro copyright screen.
