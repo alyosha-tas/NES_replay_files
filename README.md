@@ -9,3 +9,5 @@ Metroid low percent requires the following command:
 py -3 python\tastm32.py --console nes --players 1,5 --blank 0 --dpcm metroid_frame.r08
 
 Solar Jetman starts from a reset  so should use --blank 0. However the run still syncs from power on, it just doesn't skip the intro copyright screen.
+
+Quattro Adventure runs use a reset that is performed manually. An extra input is added to the .r08 after the rest to account for this, as the bot recognizes it as an extra input. It may be that not all bots require this.
