@@ -8,6 +8,8 @@ Additionally, the following runs require RAM cleared to the pattern used by defa
 Metroid low percent requires the following command:
 py -3 python\tastm32.py --console nes --players 1,5 --blank 0 --dpcm metroid_frame.r08
 
+Karate Champ may require blank 3 instead of 1 due to uninitialized RAM.
+
 Solar Jetman starts from a reset  so should use --blank 0. However the run still syncs from power on, it just doesn't skip the intro copyright screen.
 
 Quattro Adventure runs use a reset that is performed manually. An extra input is added to the .r08 after the rest to account for this, as the bot recognizes it as an extra input. It may be that not all bots require this.
